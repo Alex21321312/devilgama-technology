@@ -20,6 +20,31 @@
     <!-- My Style -->
 
     <link rel="stylesheet" href="css/style.css" />
+
+    
+    <style>
+      .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: var(--nav-height);
+    width: 100%;
+  }
+
+  .nav--hidden {
+    transform: translateY(-75px);
+    box-shadow: none;
+    transition: transform 0.4s;
+  }
+  
+    </style>
   </head>
   <body>
     <!-- Navbar start-->
@@ -371,5 +396,22 @@
 
     <!-- My Java Script -->
     <script src="js/script.js"></script>
+
+    <script>
+      {
+  const nav = document.querySelector(".navbar");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+      if (lastScrollY < window.scrollY) {
+          nav.classList.add ("nav--hidden");
+      } else {
+          nav.classList.remove ("nav--hidden");
+      }
+
+      lastScrollY = window.scrollY;
+  })
+}
+  </script>
   </body>
 </html>
