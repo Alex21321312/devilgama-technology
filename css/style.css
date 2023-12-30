@@ -23,6 +23,24 @@ body {
   height: 3000px;
 }
 
+/* Scroll Progress */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--primary);
+  width: 0%;
+}
+
 /* Navbar */
 /* .navbar {
   display: flex;
@@ -229,6 +247,13 @@ color: #fff;
 background-color: var(--primary);
 border-radius: 0.5rem;
 box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta:hover,
+.contact .row form .btn:hover {
+  background-color: #fff;
+  color: var(--primary);
+  transition-duration: 0.2s;
 }
 
 /* About Section */
