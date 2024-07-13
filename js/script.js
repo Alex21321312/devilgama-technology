@@ -51,26 +51,17 @@ document.addEventListener('click', function (e) {
   }
 });
 
-// Modal Box
-const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButtons = document.querySelectorAll('.item-detail-button');
+// // Scroll Animation
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     console.log (entry)
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('show');
+//     } else {
+//       entry.target.classList.remove('show');
+//     }
+//   });
+// });
 
-itemDetailButtons.forEach((btn) => {
-  btn.onclick = (e) => {
-    itemDetailModal.style.display = 'flex';
-    e.preventDefault();
-  };
-});
-
-// klik tombol close modal
-document.querySelector('.modal .close-icon').onclick = (e) => {
-  itemDetailModal.style.display = 'none';
-  e.preventDefault();
-};
-
-// klik di luar modal
-window.onclick = (e) => {
-  if (e.target === itemDetailModal) {
-    itemDetailModal.style.display = 'none';
-  }
-};
+// const hiddenElements = document.querySelectorAll('.about');
+// hiddenElements.forEach((el) => observer.observe(el));
