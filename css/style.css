@@ -338,6 +338,8 @@
   .divisi .row .divisi-card .divisi-card-title {
     margin: 1rem auto 0.5rem;
     font-size: large;
+    text-decoration: none;
+    color: #fff;
   }
   
   /* Product Section */
