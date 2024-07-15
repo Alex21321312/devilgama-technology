@@ -129,7 +129,7 @@
   }
   
   /* Navbar Search Form */
-  .navbar .search-form {
+  /* .navbar .search-form {
     position: absolute;
     top: 100%;
     right: 7%;
@@ -161,7 +161,7 @@
     font-size: 2rem;
     margin-right: 1.5rem;
     color: var(--bg);
-  }
+  } */
   
   /* Hero section */
   .hero {
@@ -173,8 +173,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
   }
   
   .hero::after {
@@ -456,7 +456,7 @@
     color: #fff;
     background-color: var(--primary);
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
   }
   
   .daftar .button {
@@ -466,13 +466,13 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 0.6rem;
     display: block;
     margin-top: 3rem;
+    object-fit: cover;
   }
 
   .daftar .button:hover {
