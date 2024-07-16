@@ -48,8 +48,15 @@
   .nav--hidden {
     transform: translateY(-75px);
     box-shadow: none;
-    transition: transform 0.6s;
+    transition: 0.6s;
   }
+/* 
+  .nav--reshow {
+    transform: translateY(0);
+    box-shadow: none;
+    transition: 0.6s;
+  } */
+
 </style>
   </head>
   <body>
@@ -124,24 +131,24 @@
        data-aos-duration="1000">
       <div class="row">
         <div class="divisi-card">
-          <a href=""><img src="img/Web.jpeg" alt="Web Development" class="menu-card-img"></a>
-          <a href=""><h4 class="divisi-card-title">Web Development</h4></a>
+          <a href="https://alex21321312.github.io/redirect-web-dev/"><img src="img/Web.jpeg" alt="Web Development" class="menu-card-img"></a>
+          <a href="https://alex21321312.github.io/redirect-web-dev/"><h4 class="divisi-card-title">Web Development</h4></a>
         </div>
         <div class="divisi-card">
-          <a href=""><img src="img/Game.jpeg" alt="Game Development" class="menu-card-img"></a>
-          <a href=""><h4 class="divisi-card-title">Game Development</h4></a>
+          <a href="https://alex21321312.github.io/redirect-game-dev/"><img src="img/Game.jpeg" alt="Game Development" class="menu-card-img"></a>
+          <a href="https://alex21321312.github.io/redirect-game-dev/"><h4 class="divisi-card-title">Game Development</h4></a>
         </div>
         <div class="divisi-card">
-          <a href=""><img src="img/medsos .png" alt="Media Sosial" class="menu-card-img"></a>
-          <a href=""><h4 class="divisi-card-title">Media Sosial</h4></a>
+          <a href="https://alex21321312.github.io/redirect-med-sos/"><img src="img/medsos .png" alt="Media Sosial" class="menu-card-img"></a>
+          <a href="https://alex21321312.github.io/redirect-med-sos/"><h4 class="divisi-card-title">Media Sosial</h4></a>
         </div>
         <div class="divisi-card">
-          <a href=""><img src="img/AI.jpeg" alt="AI" class="menu-card-img"></a>
-          <a href=""><h4 class="divisi-card-title">Artificial Intelligence</h4></a>
+          <a href="https://alex21321312.github.io/redirect-ai/"><img src="img/AI.jpeg" alt="AI" class="menu-card-img"></a>
+          <a href="https://alex21321312.github.io/redirect-ai/"><h4 class="divisi-card-title">Artificial Intelligence</h4></a>
         </div>
         <div class="divisi-card">
-          <a href=""><img src="img/grap des.png" alt="Graphic" class="menu-card-img"></a>
-          <a href=""><h4 class="divisi-card-title">Graphic Desain</h4></a>
+          <a href="https://alex21321312.github.io/redirect-grap-des/"><img src="img/grap des.png" alt="Graphic" class="menu-card-img"></a>
+          <a href="https://alex21321312.github.io/redirect-grap-des/"><h4 class="divisi-card-title">Graphic Design</h4></a>
         </div>
       </div>
   </div>
@@ -264,6 +271,35 @@
   })
 }
   </script>
+
+<!-- <script>
+  {
+const nav = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+});
+
+// keep track of previous scroll position
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', function() {
+  // current scroll position
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    // user has scrolled up
+    document.querySelector('.nav--hidden').classList.add('.nav--reshow');
+  } else {
+    // user has scrolled down
+    document.querySelector('.nav--hidden').classList.remove('nav-reshow');
+  }
+
+  // update previous scroll position
+  prevScrollPos = currentScrollPos;
+});
+}
+</script> -->
 
   <script>
     AOS.init();
