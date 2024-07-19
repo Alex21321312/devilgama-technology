@@ -339,7 +339,7 @@
     margin: 1rem auto 0.5rem;
     font-size: large;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
   }
   
   /* Product Section */
@@ -523,6 +523,12 @@
     color: var(--bg);
     font-weight: 700;
   }
+
+  /* Calendar */
+  .calendar {
+    margin-bottom: auto;
+    display: flex;
+  }
   
   /* Media Queries */
   /* Laptop */
@@ -611,5 +617,9 @@
   @media (max-width: 450px) {
     html {
       font-size: 55%;
+    }
+
+    .tujuan .row {
+      gap: 10rem;
     }
   }
