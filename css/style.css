@@ -412,6 +412,12 @@
     font-weight: lighter;
     font-size: 1rem;
   }
+
+  .calendar {
+    border: 1px solid var(--tengah);
+    padding: 6rem;
+    border-radius: 18px;
+  }
   
   /* Contact Section */
   .daftar .row {
